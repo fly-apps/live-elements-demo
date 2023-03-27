@@ -1,1 +1,1 @@
-export { default } from  "@rubys/stimulus-live-elements"
+export { default } from  "@flydotio/stimulus-live-elements"
