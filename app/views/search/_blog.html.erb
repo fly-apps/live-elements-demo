@@ -1,0 +1,20 @@
+<tr id="<%= blog[:id] %>">
+<td class="pr-2 pb-4">
+<a href="https://fly.io/<%= blog[:link] %>">
+<% if blog[:thumbnail] %>
+<img loading="lazy" src="https://fly.io/<%= File.join(blog[:path], blog[:thumbnail]) %>" width=200>
+<% else %>
+<img loading="lazy" src="https://fly.io/static/images/brand/logo-portrait.svg" width=200>
+<% end %>
+</a>
+<td>
+<div class="text-2xl">
+<a loading="lazy" href="https://fly.io/<%= blog[:link] %>"><%= blog[:title] %></a></div>
+</div>
+<div>
+<%= blog[:category] %>
+<span class="float-right">
+<%= blog[:author] %> - <%= blog[:date] %>
+</span>
+</div>
+</tr>

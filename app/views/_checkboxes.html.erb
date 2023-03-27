@@ -1,0 +1,28 @@
+<div id="checkboxes">
+  <div class="grid grid-cols-6 ml-12">
+    <% %w(one two three four five six).each do |name| %>
+      <input type="checkbox" name="<%= name %>"
+        <%= params[name] ? 'checked' : '' %>
+        data-action='{"click": <%= validate_update_path.inspect %>}'>
+    <% end %>
+  </div>
+
+  <div id="status" class="mt-4 text-center">
+    <% case count %>
+    <% when 0 %>
+    <div class="bg-red-700 text-white">Select three more please.</div>
+    <% when 1 %>
+    <div class="bg-red-700 text-white">Select two more please.</div>
+    <% when 2 %>
+    <div class="bg-yellow-400">Select one more please.</div>
+    <% when 3 %>
+    <div class="bg-green-400">You are good to go!</div>
+    <% when 4 %>
+    <div class="bg-yellow-400">Unselect one please.</div>
+    <% when 5 %>
+    <div class="bg-red-700 text-white">Unselect two please.</div>
+    <% when 6 %>
+    <div class="bg-red-700 text-white">Unselect three please.</div>
+    <% end %>
+  </div>
+</div>

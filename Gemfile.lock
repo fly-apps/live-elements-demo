@@ -156,6 +156,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    redcarpet (3.6.0)
     redis (4.8.1)
     regexp_parser (2.7.0)
     rexml (3.2.5)
@@ -212,6 +213,7 @@ DEPENDENCIES
   jbuilder
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
+  redcarpet (~> 3.6)
   redis (~> 4.0)
   selenium-webdriver
   sprockets-rails
@@ -222,9 +224,6 @@ DEPENDENCIES
   tzinfo-data
   web-console
   webdrivers
-
-RUBY VERSION
-   ruby 3.2.1p31
 
 BUNDLED WITH
    2.4.8

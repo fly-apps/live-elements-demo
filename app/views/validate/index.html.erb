@@ -1,0 +1,9 @@
+<div class="w-full h-screen">
+  <h1 class="text-center font-bold mb-8 text-4xl mx-auto">Validate Demo</h1>
+
+  <p class="text-center mb-4">Select <b>exactly</b> three.</p>
+
+  <%= form_with data: {controller: "live-elements"}, method: 'get' do %>
+    <%= render partial: 'checkboxes', locals: {params: params, count: 0} %>
+  <% end %>
+</div>

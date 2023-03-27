@@ -1,0 +1,17 @@
+<div class="w-full">
+  <%= form_with data: {controller: "live-elements"} do |form| %>
+    <%= form.search_field :search, placeholder: 'search', autofocus: true,
+      data: {action: {input: search_results_path}},
+      class: "mt-0 mb-4 block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mx-auto" %>
+        
+    <%= render partial: 'prev', locals: {search: ''} %>
+  <% end %>
+
+  <table class="table-fixed mx-auto">
+    <tbody id="tbody">
+      <% @blogs.each do |blog| %>
+        <%= render partial: 'blog', locals: {blog: blog} %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
