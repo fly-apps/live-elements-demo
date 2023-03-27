@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run this demo, execute the following commands:
 
-Things you may want to cover:
+```
+git clone https://github.com/fly-apps/live-elements-demo.git
+cd live-elements-demo
+bundle install
+bin/dev rails
+```
 
-* Ruby version
+If you have [installed flyctl](https://fly.io/docs/hands-on/), [signed up](https://fly.io/docs/hands-on/sign-up/), and [signed in](https://fly.io/docs/hands-on/sign-in/) you can launch and deploy:
 
-* System dependencies
+```
+fly launch
+fly deploy
+fly open
+```
 
-* Configuration
+Feel free to accept the defaults on `fly launch`.  In particular, no database or redis is required for this demo.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You can also install, launch, and deploy from the [Fly.io terminal](https://fly.io/terminal).
