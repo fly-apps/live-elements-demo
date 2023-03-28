@@ -6,7 +6,7 @@ To run this demo, execute the following commands:
 git clone https://github.com/fly-apps/live-elements-demo.git
 cd live-elements-demo
 bundle install
-bin/dev rails
+bin/dev
 ```
 
 If you have [installed flyctl](https://fly.io/docs/hands-on/), [signed up](https://fly.io/docs/hands-on/sign-up/), and [signed in](https://fly.io/docs/hands-on/sign-in/) you can launch and deploy:
