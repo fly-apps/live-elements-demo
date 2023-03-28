@@ -1,5 +1,7 @@
 # README
 
+[Stimulus Live Dlements](https://github.com/superfly/stimulus-live-elements) demo.  See [Introducing Live Elements](https://fly.io/ruby-dispatch/introducing-live-elements/) for more information.
+
 To run this demo, execute the following commands:
 
 ```
